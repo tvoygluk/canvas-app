@@ -1,0 +1,39 @@
+@import "~normalize.css";
+
+$color-main: #7070fa;
+$color-active: #bd4cf1;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    display: block;
+}
+
+.tools {
+    position: absolute;
+    display: flex;
+
+    .tool {
+        margin: 10px;
+        border-radius: 5px;
+        border: 1px solid darken($color-active, 15%);
+        background-color: $color-main;
+
+        &:hover,
+        &:focus {
+            background-color: lighten($color-main, 10%);
+            cursor: pointer;
+        }
+
+        &:active {
+            background-color: darken($color-main, 5%);
+        }
+    }
+
+    .active {
+        background-color: $color-active;
+    }
+}
