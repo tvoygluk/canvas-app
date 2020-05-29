@@ -29,3 +29,7 @@ npm run start
 ```
 npm run build
 ```
+
+---
+
+Собранный проект находится в папке /dist
